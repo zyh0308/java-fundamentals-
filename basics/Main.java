@@ -1,6 +1,8 @@
+import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
+        
         int dogCount = 1;
         System.out.println("I own " + dogCount + " " + pluralize("dog", dogCount) + ".");
 
@@ -12,6 +14,10 @@ public class Main {
         
       //call flipping function
         flipNHeads(2);
+
+     //call timeclock function 
+     clock();
+
     }
 
     // Pluralize function
@@ -44,10 +50,27 @@ public static void flipNHeads(int number ) {
     
   }
 
-  System.out.println("It took " + flips +"flips to flip " +number+" heads in a row");
+  System.out.println("It took " + flips +"flips to flip " + number +" heads in a row");
   }
 
-  //
+  //Command Line Clock
+ public static void clock(){
+       LocalDateTime now = LocalDateTime.now();
+       int hour = now.getHour();
+       int minute = now.getMinute();
+       int lastSecond = now.getSecond();
+       System.out.println(hour + ":" + minute + ":" + lastSecond);
+ 
+      while(true){
+        now = LocalDateTime.now();
+        if (now.getSecond()!=lastSecond){
+          hour = now.getHour();
+          minute = now.getMinute();
+         lastSecond = now.getSecond();
+       System.out.println(hour + ":" + minute + ":" + lastSecond);
 
-
+        }
+      }
+ }
 }
+
