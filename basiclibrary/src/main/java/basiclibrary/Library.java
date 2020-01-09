@@ -5,6 +5,7 @@
  package basiclibrary;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Random;
 
 public class Library {
@@ -73,6 +74,14 @@ public static int mulArrays(int[][] arr) {
     }
     return lowestAvg;
 }
+
+//Analyzing Weather Data
+HashMap<String,Integer> weatherData = new HashMap<>();
+
+
+
+
+
 }
 
 
