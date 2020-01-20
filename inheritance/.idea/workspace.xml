@@ -4,7 +4,7 @@
     <list default="true" id="9e5cff58-b91d-4272-8955-c55c61f24082" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../basiclibrary/bin/main/basiclibrary/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/bin/main/basiclibrary/Library.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../basiclibrary/bin/test/basiclibrary/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/bin/test/basiclibrary/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +21,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="inheritance" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -138,5 +133,25 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="365" y="41" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1579506652732" />
+    <state width="1398" height="424" key="GridCell.Tab.0.bottom" timestamp="1579511445952">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1579511445952" />
+    <state width="1398" height="426" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1579507064206" />
+    <state width="1398" height="424" key="GridCell.Tab.0.center" timestamp="1579511445951">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1579511445951" />
+    <state width="1398" height="426" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1579507064205" />
+    <state width="1398" height="424" key="GridCell.Tab.0.left" timestamp="1579511445950">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1579511445950" />
+    <state width="1398" height="426" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1579507064204" />
+    <state width="1398" height="424" key="GridCell.Tab.0.right" timestamp="1579511445951">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1579511445951" />
+    <state width="1398" height="426" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1579507064205" />
   </component>
 </project>
