@@ -4,49 +4,93 @@
 package basiclibrary;
 
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 //test feature1
 public class LibraryTest {
-    @Test public void testRollMethod(){
-        int number=4;
-        int[]result = Library.roll(number);
-        assertEquals(number,result.length);
+    @Test
+    public void testRollMethod() {
+        int number = 4;
+        int[] result = Library.roll(number);
+        assertEquals(number, result.length);
     }
 
-    @Test public void  testRollBetweenOneAndSix(){
+    @Test
+    public void testRollBetweenOneAndSix() {
         int[] result = Library.roll(3);
-        for (int number:result){
-            boolean actual =number>0 &&number<4;
-            System.out.println("actual = "+actual);
+        for (int number : result) {
+            boolean actual = number > 0 && number < 4;
+            System.out.println("actual = " + actual);
             assertTrue(actual);
 
         }
 
-        }
-     @Test public void testContainsDuplicates(){
-         int[] findDuplicates = new int[]{18,20,21,22,23,25,25,32};
-         assertTrue("This will check for duplicate values", Library.containsDuplicates(findDuplicates));
-     }
+    }
 
-    @Test public void testCalculateAverage(){
-        int[] findAverage = new int[]{2,5,8,10};
+    @Test
+    public void testContainsDuplicates() {
+        int[] findDuplicates = new int[]{18, 20, 21, 22, 23, 25, 25, 32};
+        assertTrue("This will check for duplicate values", Library.containsDuplicates(findDuplicates));
+    }
+
+    @Test
+    public void testCalculateAverage() {
+        int[] findAverage = new int[]{2, 5, 8, 10};
         double theAverage = Library.calculateAverage(findAverage);
         assertTrue("The average value for this array is", theAverage == 6.25);
     }
 
 
-
-     @Test public void testMulArraysMethod() {
-         int[][] weeklyMonthTemperatures = {
-                 {66, 64, 58, 65, 71, 57, 60},
-                 {57, 65, 65, 70, 72, 65, 51},
-                 {55, 54, 60, 53, 59, 57, 61},
-                 {65, 56, 55, 52, 55, 62, 57}
-         };
-         int actual = Library.mulArrays(weeklyMonthTemperatures);
-         int expected = 57;
-         assertEquals(expected, actual);
-     }
+    @Test
+    public void testMulArraysMethod() {
+        int[][] weeklyMonthTemperatures = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        int actual = Library.mulArrays(weeklyMonthTemperatures);
+        int expected = 57;
+        assertEquals(expected, actual);
     }
 
+    @Test public void analyzeWeatherDataTest() {
+        int[][] weeklyMonthTemperatures = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        String expected = "Never saw 63 Never saw 67 Never saw 68 Never saw 69 ";
+        String actual = Library.analyzeWeatherData(weeklyMonthTemperatures);
+        assertEquals(expected, actual);
+
+
+    }
+
+    @Test public void  tallyElectionTest(){
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        String expected = "Bush received the most votes.";
+        String winnerForActual = Library.tallyElection(votes);
+        String actual = winnerForActual + " received the most votes.";
+        assertEquals(expected, actual);
+
+
+
+    }
+
+}
