@@ -4,8 +4,7 @@
 
  package basiclibrary;
 
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
 
 public class Library {
 
@@ -73,6 +72,78 @@ public static int mulArrays(int[][] arr) {
     }
     return lowestAvg;
 }
+
+
+//Analyzing Weather Data
+
+    public static String analyzeWeatherData(int[][] weatherArr){
+        int low = weatherArr[0][0];
+        int high = weatherArr[0][0];
+
+        HashSet<Integer> weather =new HashSet<>();
+        StringBuilder result = new StringBuilder();
+
+        for (int i=0; i<weatherArr.length;i++){
+            for (int k=0; k<weatherArr[i].length;k++){
+                if (weatherArr[i][k]<low){
+                    low=weatherArr[i][k];
+                }
+
+                if(weatherArr[i][k]>high){
+                    high=weatherArr[i][k];
+                }
+                weather.add(weatherArr[i][k]);
+            }
+
+        }
+
+        for (int i=low+1;i<high;i++){
+            if (!weather.contains(i)){
+                result.append("Never saw ").append(i).append(" " );
+
+            }
+        }
+
+        return result.toString();
+
+
+
+
+    }
+
+    //Tallying Election
+
+    public static String tallyElection(List<String> votes){
+        HashMap<String, Integer> election= new HashMap<>();
+        int voteTotal=0;
+        String winner= "";
+
+        for (String vote:votes){
+            if (election.containsKey(vote)){
+                election.put(vote, election.get(vote)+1);
+            }else{
+                election.put(vote,1);
+            }
+        }
+
+        for (String key : election.keySet()){
+            if (voteTotal<election.get(key)){
+                voteTotal=election.get(key);
+                winner=key;
+            }
+        }
+
+        System.out.println(winner + " received the most votes!");
+        return winner;
+
+    }
+
+
+
+
+
+
+
 }
 
 
