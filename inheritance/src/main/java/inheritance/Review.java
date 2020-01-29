@@ -1,9 +1,9 @@
 package inheritance;
 
 public class Review {
-    String reviewBody;
-    String reviewAuthor;
-    int reviewStar;
+    public String reviewBody;
+    public String reviewAuthor;
+    public int reviewStar;
 
     public Review (String reviewBody,String reviewAuthor,int reviewStar){
         this.reviewBody=reviewBody;
